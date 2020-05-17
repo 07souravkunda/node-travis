@@ -1,6 +1,5 @@
 const { mongoose } = require("./cache");
 // const mongoose = require('mongoose')
-const redis = require("./redis");
 const Schema = mongoose.Schema;
 
 const blogSchema = new Schema({
