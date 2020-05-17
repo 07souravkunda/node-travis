@@ -20,4 +20,4 @@ script:
   - sleep 3
   - npm run test
 env:
-  - NODE_ENV=ci
+  - NODE_ENV= jest
