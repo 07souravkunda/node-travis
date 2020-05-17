@@ -64,13 +64,13 @@ mongoose
   });
 
 const path = require("path");
-app.use(express.static(path.resolve("blogapp", "build")));
+app.use(express.static(path.resolve("client", "build")));
 
 app.get("*", (req, res) => {
   console.log("hello");
-  console.log(path.resolve("blogapp", "build", "index.html"));
+  console.log(path.resolve("client", "build", "index.html"));
   res.setHeader("content-type", "text/html");
-  res.sendFile(path.resolve("blogapp", "build", "index.html"));
+  res.sendFile(path.resolve("client", "build", "index.html"));
 });
 
 app.listen(3000, () => {
