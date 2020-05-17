@@ -16,7 +16,7 @@ install:
   - redis-server --service-install
   - redis-server --service-start
 script:
-  - nohup npm run start &
+  - nohup npm run server &
   - sleep 3
   - npm run test
 env:
