@@ -39,3 +39,13 @@ test("after authentication", async () => {
   console.log(val);
   expect(val).toEqual("test");
 });
+
+afterAll(async () => {
+  try {
+    // const { todos } = mongoose.connection.collections;
+    // await todos.drop();
+    await mongoose.disconnect();
+  } catch (er) {
+    console.log(er);
+  }
+});
