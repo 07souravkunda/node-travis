@@ -1,10 +1,10 @@
 const redis = require("redis");
-const redisUrl = "redis://localhost:6379";
+const redisUrl = "redis://127.0.0.1:6379";
 const client = redis.createClient(redisUrl);
 const util = require("util");
 client.get = util.promisify(client.get);
 let key, res;
-exports.getRes = reso => {
+exports.getRes = (reso) => {
   res = reso;
 };
 const get = async () => {
@@ -16,7 +16,7 @@ const get = async () => {
       console.log("SERVING FROM REDIS");
       res.status(200).json({
         status: "success",
-        data: JSON.parse(redisBlog)
+        data: JSON.parse(redisBlog),
       });
       return true;
     }
@@ -26,12 +26,12 @@ const get = async () => {
   }
 };
 
-exports.redisGet = async _this => {
+exports.redisGet = async (_this) => {
   let key = {
     collection: _this.mongooseCollection.name,
     query: _this.getQuery(),
     filter: _this.getFilter(),
-    option: _this.getOptions()
+    option: _this.getOptions(),
   };
   key = JSON.stringify(key);
   _this.key = key;
