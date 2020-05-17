@@ -12,6 +12,9 @@ cache:
     - client/node_modules
 install:
   - npm install
+  - choco install redis-64
+  - redis-server --service-install
+  - redis-server --service-start
 script:
   - nohup npm run start &
   - sleep 3
