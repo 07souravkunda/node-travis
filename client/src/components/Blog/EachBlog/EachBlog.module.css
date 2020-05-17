@@ -1,0 +1,17 @@
+.EachBlog {
+  width: 100%;
+  border-bottom: blue dotted 0.5px;
+  margin-bottom: 5px;
+}
+.title {
+  /* position: absolute; */
+  text-align: left;
+  font-size: x-large;
+  margin-bottom: 8px;
+}
+
+.content {
+  text-align: left;
+  font-size: medium;
+  margin-bottom: 14px;
+}

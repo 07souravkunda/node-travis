@@ -1,0 +1,25 @@
+.Blog {
+  width: 70%;
+  margin: auto;
+  padding: 10px;
+}
+.float_btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: aqua;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+}
+
+link {
+  width: 100%;
+  height: 100%;
+}
+
+.IoIosAdd {
+  color: black;
+  font-size: 60px;
+}
