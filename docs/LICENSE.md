@@ -1,1 +1,1 @@
-Dummy license file
+Dummy license file v1
