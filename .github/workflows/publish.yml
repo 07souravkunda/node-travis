@@ -18,7 +18,9 @@ jobs:
         dotnet-version: 6.0.400
     - name: Hello world
       run: |
-        ./test.bat
+        chmod +x ./test.sh
+        ./test.sh
+      shell: bash
     # - name: Build Test project
     #   run: |
     #     msbuild BrowserStackLocalIntegrationTests -t:restore -p:Configuration=Release
