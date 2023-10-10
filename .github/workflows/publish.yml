@@ -18,6 +18,8 @@ jobs:
         dotnet-version: 6.0.400
     - name: Hello world
       run: |
+        dotnet new globaljson --sdk-version 6.0.400
+        dotnet --version
         chmod +x ./test.sh
         ./test.sh
       shell: bash
